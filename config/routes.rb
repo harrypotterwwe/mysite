@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :passwords, param: :token
   resources :products do
     resources :subscribers, only: [ :create ]
+    resource :unsubscribe, only: [ :show ]
   end
 
   get "/products", to: "products#index"
@@ -40,4 +41,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root "products#index"
+
 end
