@@ -1,0 +1,82 @@
+/* Tổng thể */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  color: #444;
+}
+
+/* Liên kết */
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Buttons */
+.link-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.link-buttons a {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.link-buttons a:hover {
+  background-color: #0056b3;
+}
+
+/* Sản phẩm */
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 10px;
+}
+
+#products div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#products div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#products div a {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333;
+}
+
+#products div a:hover {
+  color: #007bff;
+}
