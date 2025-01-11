@@ -1,14 +1,23 @@
-<h1><%= t "hello" %></h1>
-<h1><%= t ".title" %></h1>
+<h1 class="page-title"><%= t ".title" %></h1>
 
-<%= link_to "New product", new_product_path if authenticated? %>
-<%= link_to "Login", new_session_path unless authenticated? %>
-
+<div class="nav-links">
+  <% if authenticated? %>
+    <%= link_to "New product", new_product_path, class: "nav-link" %>
+  <% else %>
+    <%= link_to "Login", new_session_path, class: "nav-link" %>
+  <% end %>
+</div>
 
 <div id="products">
   <% @products.each do |product| %>
-    <div>
-      <%= link_to product.name, product %>
+    <div class="product-item">
+      <% if product.featured_image.attached? %>
+        <%= image_tag product.featured_image, class: "product-image" %>
+      <% else %>
+        <p class="no-image">No Image Available</p>
+      <% end %>
+
+      <%= link_to product.name, product, class: "product-link" %>
     </div>
   <% end %>
 </div>

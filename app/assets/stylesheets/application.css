@@ -8,3 +8,65 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .header-notice {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #ffdd57;
+    color: #333;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .header-nav {
+    background-color: #0044cc;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    display: inline;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  .btn-logout {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btn-logout:hover {
+    text-decoration: underline;
+  }
+
+  .main-content {
+    padding: 2rem;
+  }
